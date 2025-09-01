@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://agw-as.cz/ats-ws/atsUser/atsSzr/v3_4" targetNamespace="http://agw-as.cz/ats-ws/atsUser/atsSzr/v3_4">
+    <wsdl:types>
+        <xs:schema xmlns:v3_4="http://agw-as.cz/ats-ws/atsUser/atsSzr/v3_4" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://agw-as.cz/ats-ws/atsUser/atsSzr/v3_4">
+
+
+            <xs:element name="directAuthUserRequest" type="v3_4:directAuthUserRequestType"/>
+            <xs:element name="directAuthUserResponse" type="v3_4:directAuthUserResponseType"/>
+
+            <xs:complexType name="directAuthUserRequestType">
+                <xs:sequence>
+                    <xs:element name="username" type="xs:string"/>
+                    <xs:element name="password" type="xs:string"/>
+                    <xs:choice minOccurs="0">
+                        <xs:element name="otp" type="xs:string"/>
+                        <xs:element name="certificate" type="xs:base64Binary"/>
+                    </xs:choice>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="directAuthUserResponseType">
+                <xs:sequence>
+                    <xs:element maxOccurs="1" minOccurs="0" name="attributes" type="v3_4:attributesType">
+                        <xs:annotation>
+                            <xs:documentation>atributy z identitniho prostoru</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="status" type="v3_4:directAuthUserResponseStatusType">
+                        <xs:annotation>
+                            <xs:documentation>OK/SYSTEM_ERROR/VERIFICATION_FAILED</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="description" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="attributesType">
+                <xs:all><xs:element name="Username" type="v3_4:UsernameType"/><xs:element name="UzivatelId" type="v3_4:UzivatelIdType"/><xs:element name="ZkratkaSubjektu" type="v3_4:ZkratkaSubjektuType"/><xs:element name="IcSubjektu" type="v3_4:IcSubjektuType"/><xs:element name="Jmeno" type="v3_4:JmenoType"/><xs:element name="Prijmeni" type="v3_4:PrijmeniType"/><xs:element name="TitulPred" type="v3_4:TitulPredType"/><xs:element name="TitulZa" type="v3_4:TitulZaType"/><xs:element name="PristupoveRole" type="v3_4:PristupoveRoleType"/><xs:element name="CinnostniRole" type="v3_4:CinnostniRoleType"/><xs:element name="Email" type="v3_4:EmailType"/><xs:element name="NazevSubjektu" type="v3_4:NazevSubjektuType"/><xs:element name="EmailSubjektu" type="v3_4:EmailSubjektuType"/><xs:element name="TypInstituce" type="v3_4:TypInstituceType"/><xs:element name="OvmPrimarni" type="v3_4:OvmPrimarniType"/><xs:element name="TypPrihlaseni" type="v3_4:TypPrihlaseniType"/><xs:element name="OsobaZtotoznena" type="v3_4:OsobaZtotoznenaType"/><xs:element name="TokenAifo" type="v3_4:TokenAifoType"/><xs:element name="Pracoviste" type="v3_4:PracovisteType"/><xs:element name="IdentifikatorOvm" type="v3_4:IdentifikatorOvmType"/><xs:element name="TimeLimitedId" type="v3_4:TimeLimitedIdType"/></xs:all></xs:complexType>
+            <xs:simpleType name="directAuthUserResponseStatusType">
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="OK"/>
+                    <xs:enumeration value="SYSTEM_ERROR"/>
+                    <xs:enumeration value="VERIFICATION_FAILED"/>
+                </xs:restriction>
+            </xs:simpleType>
+
+            <xs:simpleType name="UsernameType"><xs:restriction base="xs:string"><xs:minLength value="4"/><xs:maxLength value="50"/>
+            </xs:restriction>
+            </xs:simpleType><xs:simpleType name="UzivatelIdType"><xs:restriction base="xs:base64Binary"><xs:minLength value="16"/><xs:maxLength value="16"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="ZkratkaSubjektuType"><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="20"/><xs:pattern value="[a-zA-Z0-9_.;:@|!*%=+-?,]*"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="IcSubjektuType"><xs:restriction base="xs:string"><xs:minLength value="1"/><xs:maxLength value="8"/><xs:pattern value="[0-9]*"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="JmenoType"><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="32"/><xs:pattern value="[^ßĚŮěů0-9 \t\r\n\-!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@\[\\\]^_`{|}~][^0-9\t\r\n!&quot;#$%'()*+/:;&lt;=&gt;?@\[\\\]^_`{|}~]{1,}"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="PrijmeniType"><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="64"/><xs:pattern value="[^ßĚŮěů0-9 \t\r\n\-!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@\[\\\]^_`{|}~][^0-9\t\r\n!&quot;#$%'()*+/:;&lt;=&gt;?@\[\\\]^_`{|}~]{1,}"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="TitulPredType"><xs:union><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="20"/><xs:pattern value="[^ßĚŮěů0-9 \t\r\n\-!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@\[\\\]^_`{|}~][^0-9\t\r\n!&quot;#$%'()*+/:;&lt;=&gt;?@\[\\\]^_`{|}~]{1,}"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType><xs:restriction base="xs:string"><xs:maxLength value="0"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:union>
+        </xs:simpleType><xs:simpleType name="TitulZaType"><xs:union><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="20"/><xs:pattern value="[^ßĚŮěů0-9 \t\r\n\-!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@\[\\\]^_`{|}~][^0-9\t\r\n!&quot;#$%'()*+/:;&lt;=&gt;?@\[\\\]^_`{|}~]{1,}"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType><xs:restriction base="xs:string"><xs:maxLength value="0"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:union>
+        </xs:simpleType><xs:complexType name="PristupoveRoleType"><xs:sequence><xs:element maxOccurs="unbounded" minOccurs="1" name="role"><xs:simpleType><xs:restriction base="xs:string"><xs:maxLength value="30"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType><xs:complexType name="CinnostniRoleType"><xs:sequence><xs:element maxOccurs="unbounded" minOccurs="0" name="Agenda"><xs:complexType><xs:sequence><xs:element maxOccurs="1" minOccurs="1" name="KodAgendy"><xs:simpleType><xs:restriction base="xs:string"><xs:maxLength value="15"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element><xs:element maxOccurs="unbounded" minOccurs="1" name="KodCinnostniRole"><xs:simpleType><xs:restriction base="xs:string"><xs:maxLength value="15"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType><xs:simpleType name="EmailType"><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="1000"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="NazevSubjektuType"><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="255"/><xs:pattern value="[^\t\r\n]*"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="EmailSubjektuType"><xs:restriction base="xs:string"><xs:minLength value="0"/><xs:maxLength value="1000"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="TypInstituceType"><xs:restriction base="xs:unsignedInt"><xs:minInclusive value="1"/><xs:maxInclusive value="100"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="OvmPrimarniType"><xs:restriction base="xs:string"><xs:enumeration value=""/><xs:enumeration value="TRUE"/><xs:enumeration value="FALSE"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="TypPrihlaseniType"><xs:union><xs:simpleType><xs:restriction base="xs:string"><xs:enumeration value="p-pwd"/><xs:enumeration value="p-hotp"/><xs:enumeration value="p-cert"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType><xs:restriction base="xs:string"/>
+        </xs:simpleType>
+        </xs:union>
+        </xs:simpleType><xs:simpleType name="OsobaZtotoznenaType"><xs:restriction base="xs:boolean"/>
+        </xs:simpleType><xs:simpleType name="TokenAifoType"><xs:restriction base="xs:string"/>
+        </xs:simpleType><xs:complexType name="PracovisteType"><xs:sequence><xs:element maxOccurs="1" minOccurs="0" name="Id"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="20"/><xs:pattern value="[a-zA-Z0-9_.;:@|!*%=+-?,]*"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element><xs:element maxOccurs="1" minOccurs="0" name="Nazev"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="2"/><xs:maxLength value="100"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element><xs:element maxOccurs="1" minOccurs="0" name="Adresa"><xs:simpleType><xs:restriction base="xs:string"><xs:maxLength value="200"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:element><xs:element maxOccurs="1" minOccurs="0" name="KodAdresy" type="xs:int"/>
+        </xs:sequence>
+        </xs:complexType><xs:simpleType name="IdentifikatorOvmType"><xs:restriction base="xs:string"><xs:maxLength value="36"/>
+        </xs:restriction>
+        </xs:simpleType><xs:simpleType name="TimeLimitedIdType"><xs:restriction base="xs:string"><xs:maxLength value="50"/>
+        </xs:restriction>
+        </xs:simpleType></xs:schema>
+    </wsdl:types>
+    <wsdl:message name="directAuthUserResponse">
+        <wsdl:part element="tns:directAuthUserResponse" name="directAuthUserResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="directAuthUserRequest">
+        <wsdl:part element="tns:directAuthUserRequest" name="directAuthUserRequest">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="DirectAuthUser">
+        <wsdl:operation name="directAuthUser">
+            <wsdl:input message="tns:directAuthUserRequest" name="directAuthUserRequest">
+            </wsdl:input>
+            <wsdl:output message="tns:directAuthUserResponse" name="directAuthUserResponse">
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="DirectAuthUserSoap11" type="tns:DirectAuthUser">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="directAuthUser">
+            <soap:operation soapAction="directAuthUserv2"/>
+            <wsdl:input name="directAuthUserRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="directAuthUserResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="DirectAuthUserService">
+        <wsdl:port binding="tns:DirectAuthUserSoap11" name="DirectAuthUserSoap11">
+            <soap:address location="https://cert-externalauthapi.caais.gov.cz/asws/directAuthUserEndpoint"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
