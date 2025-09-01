@@ -63,7 +63,7 @@ Tabulka níže obsahuje seznam dostupných parametrů, které se posílají na *
      - Identifikátor Relying Party (AIS). V hodnotě se posílá zkratka AIS, jak je zadána v konfiguraci AIS v CAAIS.
    * - ``redirect_uri``
      - ano
-     - Sem je po úspěšném přihlášení v CAAIS uživatel přesměrován. Musí odpovídat některé z hodnot, které jsou u AIS nakonfigurovány jako návratové URL.
+     - Sem je po úspěšném přihlášení v CAAIS uživatel přesměrován. Musí odpovídat některé z hodnot, které jsou u AIS nakonfigurovány jako návratové URL.
    * - ``scope``
      - ano
      - Seznam oprávnění, které Relying Party vyžaduje od Resource Ownera – seznam hodnot oddělených mezerou. Viz kapitola :ref:`oidc:atributy`.
@@ -75,7 +75,7 @@ Tabulka níže obsahuje seznam dostupných parametrů, které se posílají na *
      - Chrání před zneužitím autorizačního kódu. Původně určená pro PKCE flow (:rfc:`7636`), ale pro zvýšení bezpečnosti doporučujeme používat vždy. Následná žádost jdoucí na *token endpoint* musí obsahovat odpovídající ``code_verifier``. Hodnota ``code_challenge`` je base64url kódovaná SHA256 hash hodnoty ``code_verifier``.
    * - ``nonce``
      - ne
-     - Parametr, užívaný k zabránění tzv. „replay“ útokům. Obsahuje náhodně vygenerovanou hodnotu. Pokud ji AIS pošle, CAAIS přidá „nonce“ claim do identity tokenu. AIS poté musí ověřit, že obdržená hodnota v daném claimu odpovídá odeslané hodnotě. Doporučujeme používat pro zvýšení bezpečnosti.
+     - Parametr, užívaný k zabránění tzv. „replay“ útokům. Obsahuje náhodně vygenerovanou hodnotu. Pokud ji AIS pošle, CAAIS přidá „nonce“ claim do identity tokenu. AIS poté musí ověřit, že obdržená hodnota v daném claimu odpovídá odeslané hodnotě. Doporučujeme používat pro zvýšení bezpečnosti.
    * - ``state``
      - ne
      - Po úspěšném přihlášení uživatele provede CAAIS přesměrování na AIS a beze změny pošle tuto hodnotu v parametrech. Toto má dvoje využití, jenž je možné kombinovat:
@@ -127,16 +127,16 @@ Základní struktura URL, na kterou CAAIS přesměruje uživatele po přihláše
 Seznam atributů uživatele (profilu) v identity tokenu
 =====================================================
 
-CAAIS může vracet v *identity tokenu* uživatele následující údaje o autentizovaném uživateli, respektive jeho profilu.
+CAAIS může vracet v *identity tokenu* uživatele následující údaje o autentizovaném uživateli, respektive jeho profilu.
 AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který může specifikovat údaje, které chce o uživateli získat. Jednotlivé hodnoty v parametru ``scope`` jsou odděleny mezerou. Parametr ``scope`` musí vždy obsahovat hodnotu ``openid``.
 
 .. list-table::  Seznam atributů v identity tokenu
    :header-rows: 1
 
    * - Atribut
-     - Claim v ID tokenu
+     - Claim v ID tokenu
      - Potřebný scope
-     - Atribut z datového modelu
+     - Atribut z datového modelu
    * - Příjmení
      - family_name
      - profile
@@ -160,7 +160,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
    * - Pseudonym
      - sub
      - oidc
-     - "Mapování SeP"." SePBSI" (ServiceMapping.sepBsi) pro daný "Profil"."uživatelské jméno" (Profile.loginName), poznámka - BSI se generuje v CAAIS nové, nemigruje se z JIP/KAAS
+     - "Mapování SeP"." SePBSI" (ServiceMapping.sepBsi) pro daný "Profil"."uživatelské jméno" (Profile.loginName), poznámka – BSI se generuje v CAAIS nové, nemigruje se z JIP/KAAS
    * - Přístupové role
      - access_roles
      - profile
@@ -171,7 +171,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
 
        Pokud má profil přiřazeny Skupiny rolí nebo Business role, dotahují se přes ně odpovídající přístupové role. Dále se dotahují i delegované přístupové role přes "Vazební profil".
 
-       V seznamu přístupových rolí se vrací pouze role pro daný AIS, do kterého se uživatel autentizuje.
+       V seznamu přístupových rolí se vrací pouze role pro daný AIS, do kterého se uživatel autentizuje.
    * - role
      - role
      - profile
@@ -226,9 +226,9 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
 
        Pokud má profil přiřazeny Skupiny rolí nebo Business role, dotahují se přes ně odpovídající přístupové role. Dále se dotahují i delegované přístupové role přes "Vazební profil".
 
-       V seznamu přístupových rolí se vrací pouze role pro daný AIS, do kterého se uživatel autentizuje.
+       V seznamu přístupových rolí se vrací pouze role pro daný AIS, do kterého se uživatel autentizuje.
 
-       V atributu bude formát JSON, např. takto:
+       V atributu bude formát JSON, např. takto:
 
         .. code-block:: json
 
@@ -251,7 +251,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
 
        Pokud má profil přiřazeny Skupiny rolí nebo Business role, dotahují se přes ně odpovídající činnostní role a agendy. Dále se dotahují i delegované činnostní role a agendy přes "Vazební profil".
 
-       V atributu bude formát JSON, např. takto:
+       V atributu bude formát JSON, např. takto:
 
         .. code-block:: json
 
@@ -290,7 +290,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
      - contact
      - "Profil"."Telefon" (Profile.PhoneNumber) 
      
-       Vybere se první telefonní číslo s typem „mobilní“, tedy "Telefon"."Typ Telefonu"."kód" (PhoneNumber.PhoneNumberType.code) = 2. Pokud takové neexistuje, vybere se první telefonní číslo jiného typu. Řazení telefonů je podle databázového ID.
+       Vybere se první telefonní číslo s typem „mobilní“, tedy "Telefon"."Typ Telefonu"."kód" (PhoneNumber.PhoneNumberType.code) = 2. Pokud takové neexistuje, vybere se první telefonní číslo jiného typu. Řazení telefonů je podle databázového ID.
        
        Formát telefonního čísla odpovídá ITU-E.164 (např. +420777000000).
    * - Název subjektu
@@ -308,7 +308,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
    * - Osoba ztotožněna
      - person_identified
      - profile
-     - "Profil"."Fyzická osoba"."osoba evidována v rob" (Profile.PhysicalPerson.personInRob)
+     - "Profil"."Fyzická osoba"."osoba evidována v rob" (Profile.PhysicalPerson.personInRob)
    * - Statutární zástupce
      - is_statutory_representative
      - profile
@@ -328,7 +328,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
        a
        "Profil"."Fyzická osoba"."druh dokladu" (Profile.PhysicalPerson.documentType)
 
-       V atributu bude formát JSON, např. takto:
+       V atributu bude formát JSON, např. takto:
        
         .. code-block:: json
 
@@ -348,7 +348,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
      - | public\_organization
        | \_identifier
      - subject
-     - "Subjekt"."kód ovm v rovm" (Subject.ovmInRovmCode)
+     - "Subjekt"."kód ovm v rovm" (Subject.ovmInRovmCode)
    * - Identifikátor SPUÚ
      - | authorized\_private
        | \_entity\_personal
@@ -358,7 +358,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
    * - Autorizační token
      - time_limited_id
      - role
-     - Technický atribut pro ukládání tokenů (neuveden v DM)
+     - Technický atribut pro ukládání tokenů (neuveden v DM)
 
 
 .. admonition:: URL pro žádost o přihlášení
@@ -381,7 +381,7 @@ Získání tokenů
 Ve chvíli, kdy má AIS k dispozici ``code`` získaný po přihlášení uživatele, musí jej přeposlat na *token endpoint* CAAIS, aby jej vyměnil za *access token* a *identity token*. Žádost o tokeny musí proběhnout pomocí HTTP POST dotazu uvnitř mTLS spojení – AIS se musí autentizovat klientským certifikátem, který má registrován ve své konfiguraci v CAAIS. AIS pošle v dotazu následující parametry:
 
   - ``grant_type`` s hodnotou ``authorization_code``;
-  - ``code`` s obdrženou hodnotou;
+  - ``code`` s obdrženou hodnotou;
   - ``redirect_uri``, která byla použita při přihlášení uživatele;
   - ``code_verifier``, byl-li použit ``code_challenge``.
 
@@ -496,7 +496,7 @@ Popis endpointu pro odhlášení uživatele
 Pokud AIS odhlásí přihlášeného uživatele (ukončí jeho sezení v AIS), přesměruje následně uživatele na endpoint CAAIS pro odhlášení uživatele v CAAIS.
 
 
-Tabulka níže obsahuje seznam dostupných query parametrů, které se posílají na CAAIS při žádosti o odhlášení uživatele. Některé z nich jsou povinné. Parametry je možné předat jak HTTP metodou GET (jako součást query string URL), tak POST. Stejně jako při přihlášení, je nutné mTLS 
+Tabulka níže obsahuje seznam dostupných query parametrů, které se posílají na CAAIS při žádosti o odhlášení uživatele. Některé z nich jsou povinné. Parametry je možné předat jak HTTP metodou GET (jako součást query string URL), tak POST. Stejně jako při přihlášení je nutné mTLS.
 
 .. list-table::  Seznam query parametrů
    :header-rows: 1
@@ -535,7 +535,7 @@ Základní struktura URL použitá při žádosti o odhlášení:
      &id_token_hint=jwt_id_token
      &state=my_state
 
-Po přesměrování uživatele CAAIS nabídne uživateli ukončení single sign-on sezení (odhlášení z CAAIS). Bez ohledu, zda je signle sign-on sezení ukončeno, přesměruje CAAIS uživatele zpět do AIS na hodnotu předanou v ``post_logout_redirect_uri``. Pokud AIS předal parametr ``state``, CAAIS vrátí tento parametr s nezměněnou hodnotou.
+Po přesměrování uživatele CAAIS nabídne uživateli ukončení single sign-on sezení (odhlášení z CAAIS). Bez ohledu, zda je signle sign-on sezení ukončeno, přesměruje CAAIS uživatele zpět do AIS na hodnotu předanou v ``post_logout_redirect_uri``. Pokud AIS předal parametr ``state``, CAAIS vrátí tento parametr s nezměněnou hodnotou.
 
 .. admonition:: URL pro přesměrování po odhlášení
    :class: note
