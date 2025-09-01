@@ -457,7 +457,7 @@ JIP/KAAS legacy API je (s výhradou změny jmenného prostoru) zpětně kompati
    * - 3.4
      - OvmPrimarni
      - Hlavní subjekt pro subjekty s duplicitním IČ (hodnoty true/false).
-     - <prázdná_hodnota> (neexistuje odpovídající atribut)
+     - *neexistuje*
    * - 3.4
      - TypPrihlaseni
      - Způsob přihlášení uživatele. Viz :ref:`api_jip:ciselnik:prihlaseni`.
