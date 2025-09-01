@@ -78,7 +78,7 @@ Povšimněte si hodnot HTTP hlaviček ``Content-Type`` a ``SOAPAction`` v ukáz
     
 Pro zabezpečení komunikace je dovoleno používat pouze šifrování protokolem TLS 1.2 či TLS 1.3, ostatní verze (SSL, TLS 1.0, TLS 1.1) nejsou povoleny. Pro volání WS je nutné AIS autentizovat klientským certifikátem při navázání mTLS spojení. Tento certifikát musí být zaregistrován v konfiguraci AIS v CAAIS a musí být vydán podporovanou certifikační autoritou (podrobnosti v části :ref:`si:certs`).
 
-Jelikož JIP/KAAS legacy API využívá certifikát nejen k autentizaci, ale i k identifikaci konfigurace AIS v CAAIS, nelze použít stejný certifikát pro více konfigurací. Pokud by k tomu došlo, CAAIS se chová, jako by mu byl předkládán neznámý klientský certifikát.
+Jelikož JIP/KAAS legacy API využívá certifikát nejen k autentizaci, ale i k identifikaci konfigurace AIS v CAAIS, nelze použít stejný certifikát pro více konfigurací. Pokud by k tomu došlo, CAAIS se chová, jako by mu byl předkládán neznámý klientský certifikát. Jedna konfigurace však může mít registrováno více autentizačních certifikátů, čehož lze využít pro bezvýpadkovou výměnu certifikátů.
 
 .. admonition:: Ukázka odpovědi při chybě certifikátu
    :class: note

@@ -34,6 +34,8 @@ URL prostředí mají podobu *https://caais[-zkratka prostředí].<rozhraní>/*,
      - 6.00–22.00
 
 
+.. _si:env:edu:
+
 Školicí prostředí (edu)
 ---------------------------------
 
@@ -49,6 +51,8 @@ Databáze školicího prostředí je obnovována v pátek odpoledne na základ�
 
 Přihlašování je možné jen prostřednictvím CAAIS-IdP, nikoli NIA (identitou občana).
 
+
+.. _si:env:int:
 
 Integrační prostředí (test-ext)
 -------------------------------
