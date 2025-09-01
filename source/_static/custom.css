@@ -1,0 +1,49 @@
+.wy-nav-content {
+    max-width: 60em;
+}
+
+div.rst-content > div.document table.docutils td,
+div.rst-content > div.document table.docutils td p,
+div.rst-content > div.document table.docutils td ul,
+div.rst-content > div.document table.docutils td ol {
+    white-space: normal;
+    line-height: 1.25em;
+}
+
+div.rst-content > div.document table.docutils td ul,
+div.rst-content > div.document table.docutils td ol {
+    margin: .5ex 0;
+}
+
+div.rst-content > div.document table.docutils td li {
+    margin-bottom: .5ex;
+}
+
+
+div.rst-content > div.document section > p {
+    margin: 1.5ex 0;  
+}
+
+div.rst-content > div.document section > ul.simple {
+    margin: 1.5ex 0;
+}
+
+div.rst-content > div.document section > h1,
+div.rst-content > div.document section > h2,
+div.rst-content > div.document section > h3 {
+    color: #2261a1; /*#236384*/
+    margin: 1em 0 .5em;
+}
+
+div.rst-content > div.document section > h4 {
+    font-size: 1rem;
+    margin: 1em 0 .5em;
+}
+
+div.rst-content > div.document section > div.admonition {
+    margin: 1.5em 0;
+}
+
+div.rst-content > div.document section > h1+div.admonition {
+    margin: 0 0 1.5em;
+}
