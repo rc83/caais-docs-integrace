@@ -1,0 +1,9 @@
+<UpdateOrganizationRequest object-path="skola_1" xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+  <email>
+    <item>
+      <type>1</type>
+      <email>info@example.org</email>
+    </item>
+  </email>
+  <zruseno>TRUE</zruseno>
+</CreateOrganizationRequest>

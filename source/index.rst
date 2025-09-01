@@ -14,4 +14,5 @@ Dokumentace CAAIS
    integrace/index
    tutorials/index
    api/index
+   api-idm/index
    supporting-info/index

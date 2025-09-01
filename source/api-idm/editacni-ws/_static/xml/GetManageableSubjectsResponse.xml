@@ -1,0 +1,7 @@
+<GetManageableSubjectsResponse xmlns="http://userportal.novell.com/ws-edit/2/WS-2-1.1">
+    <subjects>
+        <item name="KPRAHA" LaDelegationRights="active" ReaderDelegationRights="active"/>
+        <item name="PrahaDubec" LaDelegationRights="active"/>
+        <item name="Praha3" LaDelegationRights="inactive" ReaderDelegationRights="active"/>
+    </subjects>
+</GetManageableSubjectsResponse>

@@ -1,0 +1,7 @@
+<GetListOfValuesResponse xmlns="http://userportal.novell.com/ws-edit/2/WS-2-1.1">
+    <list name="ciselnik_statu" type="string">
+        <item key="4">Afghánská islámská republika</item>
+        …
+        <item key="894">Zambijská republika</item>
+    </list>
+</GetListOfValuesResponse>

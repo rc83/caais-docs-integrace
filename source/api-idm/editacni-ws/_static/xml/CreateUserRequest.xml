@@ -1,0 +1,36 @@
+<CreateUserRequest object-id="humphrey_appleby" xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+  <titulPred>Sir</titulPred>
+  <firstname>Humphrey</firstname>
+  <surname>Appleby</surname>
+  <titulZa></titulZa>
+  <password>password</password>
+  <email>
+    <item>
+      <type>1</type>
+      <email>humphrey.appleby@maz.gov.cz</email>
+    </item>
+  </email>
+  <telephoneNumber>
+    <item>
+      <type>1</type>
+      <number>+420987654321</number>
+    </item>
+    <item>
+      <type>2</type>
+      <number>+420777123456</number>
+    </item>
+  </telephoneNumber>
+  <clientCertificate>
+    <item>
+      <type>V</type>
+      <number>cafe</number>
+      <issuer>CN=CAAIS_DIA_TEST_ECC_2035, OU=CAAIS, O=DIA, L=Praha, C=CZ</issuer>
+    </item>
+  </clientCertificate>
+  <aisRole>
+    <item>CAAIS_GUI.la</item>
+  </aisRole>
+  <cinnostniRole>
+    <item agenda="A1761">CR11552</item>
+  </cinnostniRole>
+</CreateUserRequest>

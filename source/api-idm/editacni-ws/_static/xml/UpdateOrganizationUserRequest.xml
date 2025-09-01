@@ -1,0 +1,3 @@
+<UpdateOrganizationUserRequest object-path="skola_1" object-id="john_keating" xmlns="http://userportal.novell.com/ws/WS-LA-1.1"> 
+   <password>Nov3Heslo</password> 
+</UpdateOrganizationUserRequest>

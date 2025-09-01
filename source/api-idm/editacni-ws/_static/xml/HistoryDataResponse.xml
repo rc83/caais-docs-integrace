@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HistoryDataResponse total="90" xmlns="http://userportal.novell.com/ws-edit/2/WS-2-1.1">
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-12-19T09:51:05.000Z" name="shortcut" attributePath="subject" subjectPath="DIACZ">
+        <data type="string">
+            <item>DIACZ</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-12-19T09:50:55.000Z" name="ovm_change_time" attributePath="subject" subjectPath="DIACZ">
+        <data type="string">
+            <item>2025-12-19 00:00:00</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-12-19T09:51:05.000Z" name="shortcut" attributePath="subject" subjectPath="DIACZ">
+        <data type="string">
+            <item>DIACZ</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-10-02T09:15:49.000Z" name="url" attributePath="subject_wwwUrl" subjectPath="DIACZ">
+        <data type="string">
+            <item>https://dia.gov.cz</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="id" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>2</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="contract_number" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>V345eafar</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="target_subject_id" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>1</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="source_subject_id" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>3</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="reason" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>Na základně rozhodnutí Ministerstva vnitra</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="confirmed" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>false</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="source_subject_id" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>3</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="confirmed" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>false</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="contract_number" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>V345eafar</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="id" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>2</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="target_subject_id" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>1</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-07-21T11:43:45.000Z" name="reason" attributePath="subject_authority" subjectPath="DIACZ">
+        <data type="string">
+            <item>Na základně rozhodnutí Ministerstva vnitra</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-07-21T10:47:07.000Z" name="contact_postal_address_id" attributePath="subject_contact" subjectPath="DIACZ">
+        <data type="string">
+            <item>1074248</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-07-21T10:47:07.000Z" name="contact_postal_address_id" attributePath="subject_contact" subjectPath="DIACZ">
+        <data type="string">
+            <item>1074248</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-07-21T10:47:07.000Z" name="contact_postal_address_id" attributePath="subject_contact" subjectPath="DIACZ">
+        <data type="string">
+            <item>1074248</item>
+        </data>
+    </attribute>
+    <attribute operation="update" changeTime="2025-07-21T10:47:07.000Z" name="contact_postal_address_id" attributePath="subject_contact" subjectPath="DIACZ">
+        <data type="string">
+            <item>1074248</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+    <attribute operation="insert" changeTime="2025-12-26T23:22:51.000Z" name="access_role" attributePath="subject_accessRole" subjectPath="DIACZ">
+        <data type="string">
+            <item>Administrátor CREDO</item>
+        </data>
+    </attribute>
+</HistoryDataResponse>

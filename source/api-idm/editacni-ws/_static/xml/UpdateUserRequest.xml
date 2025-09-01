@@ -1,0 +1,17 @@
+<UpdateUserRequest object-id="humphrey_appleby" xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+  <titulPred>Sir</titulPred>
+  <email>
+    <item>
+      <type>1</type>
+      <email>humphrey.appleby@maz.gov.cz</email>
+    </item>
+  </email>
+  <aisRole>
+    <item>CAAIS_GUI.la</item>
+    <item>example_AIS.example_role</item>
+  </aisRole>
+  <cinnostniRole>
+    <item agenda="A1761">CR11552</item>
+    <item agenda="A1761">CR11560</item>
+  </cinnostniRole>
+</UpdateUserRequest>

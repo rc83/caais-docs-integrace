@@ -1,0 +1,11 @@
+<GetDataboxListResponse total="1" xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+    <row object-id="6bnaawp">
+        <name>Ministerstvo vnitra</name>
+        <street>Nad štolou</street>
+        <houseNumber>936</houseNumber>
+        <sequenceNumber>3</sequenceNumber>
+        <town>Praha</town>
+        <isdsBoxCreateTime>20240313162345Z</isdsBoxCreateTime>
+        <isdsBoxChangeTime>1710347025</isdsBoxChangeTime>
+    </row>
+</GetDataboxListResponse>

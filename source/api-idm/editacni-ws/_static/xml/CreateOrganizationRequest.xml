@@ -1,0 +1,41 @@
+<CreateOrganizationRequest xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+  <name>Škola 1</name>
+  <contactAddress>
+    <addressCode>22552979</addressCode>
+  </contactAddress>
+  <email>
+    <item>
+      <type>1</type>
+      <email>info@example.org</email>
+    </item>
+  </email>
+  <telephoneNumber>
+    <item>
+      <type>1</type>
+      <number>+420234567890</number>
+    </item>
+  </telephoneNumber>
+  <ico>11119999</ico>
+  <dic>CZ11119999</dic>
+  <typOrganizace>14</typOrganizace>
+  <bankAccount>
+    <item>
+      <number>700222222</number>
+      <bankCode>0300</bankCode>
+      <description>hlavní účet</description>
+    </item>
+  </bankAccount>
+  <officesHours>
+    <item>
+      <day>1</day>
+      <from>8:00</from>
+      <to>12:00</to>
+    </item>
+  </officesHours>
+  <url>
+    <item>
+      <type>1</type>
+        <url>http://www.example.org/</url>
+    </item>
+  </url>
+</CreateOrganizationRequest>

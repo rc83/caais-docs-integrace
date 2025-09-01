@@ -1,0 +1,66 @@
+<GetUserResponse xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+    <titulPred>Sir</titulPred>
+    <firstname>Humhrey</firstname>
+    <surname>Appleby</surname>
+    <titulZa></titulZa>
+    <loginDisabled text="Ne">FALSE</loginDisabled>
+    <identifiedByROB text="Ano">TRUE</identifiedByROB>
+    <address>
+        <addressCode>28075820</addressCode>
+        <street>Na vápence</street>
+        <cityCode>554782</cityCode>
+        <city>Praha</city>
+        <region>Hlavní město Praha</region>
+        <postalCode>13000</postalCode>
+        <metropolitanDistrict>Praha 3</metropolitanDistrict>
+        <cityPart>Žižkov</cityPart>
+        <houseNumber>915</houseNumber>
+        <sequenceNumber>14</sequenceNumber>
+        <pragueDistrict>Praha 3</pragueDistrict>
+    </address>
+    <email>
+        <item>
+            <type text="oficiální">1</type>
+            <email>humphrey.appleby@dia.gov.cz</email>
+        </item>
+      </email>
+    <telephoneNumber>
+        <item>
+            <type text="stolní">1</type>
+            <number>+420222333444</number>
+        </item>
+        <item>
+            <type text="mobilní">2</type>
+            <number>+420777888999</number>
+        </item>
+    </telephoneNumber>
+    <clientCertificate>
+        <item>
+            <type text="QUALIFIED">Q</type>
+            <number>cafe</number>
+            <issuer>CN=CAAIS_DIA_TEST_ECC_2035, OU=CAAIS, O=DIA, L=Praha, C=CZ</issuer>
+        </item>
+        <item>
+            <type text="QUALIFIED">Q</type>
+            <number>decaf</number>
+            <issuer>C=CZ, OID.2.5.4.97=NTRCZ-19122063, O=Správa státních služeb vytvářejících důvěru, CN=NCA SubCA2/RSA 12/2023</issuer>
+        </item>
+    </clientCertificate>
+    <aisRole>
+        <item text="Administrátor">EXAMPLE.ACCESS</item>
+        <item text="Národní administrátor">CAAIS_GUI.na</item>
+    </aisRole>
+    <function></function>
+    <verejnaOsoba text="Ne">FALSE</verejnaOsoba>
+    <poznamka></poznamka>
+    <agendy>
+        <item text="Státní služba" platnostOd="2024-02-22">A1761</item>
+        <item text="Ochrana utajovaných informací a bezpečnostní způsobilost" platnostOd="2024-02-22">A1061</item>
+    </agendy>
+    <cinnostniRole>
+        <item agenda="A1761" text="Výmaz dat státního zaměstnance z rejstříku státních zaměstnanců služebního úřadu" platnostOd="2024-02-22">CR11552</item>
+        <item agenda="A1761" text="Editace výsledků úřednických zkoušek" platnostOd="2024-02-22">CR11557</item>
+        <item agenda="A1061" text="Zproštění povinnosti zachovávat mlčenlivost" platnostOd="2024-02-22">CR6205</item>
+    </cinnostniRole>
+    <casPosledniZmeny>1766077200001</casPosledniZmeny>
+</GetUserResponse>

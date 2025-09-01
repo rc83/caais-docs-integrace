@@ -1,0 +1,14 @@
+<CreateOrganizationUserRequest object-path="skola_1" object-id="john_keating" xmlns="http://userportal.novell.com/ws/WS-LA-1.1"> 
+   <firstname>John</firstname> 
+   <surname>Keating</surname> 
+   <password>Tajn3Heslo</password> 
+   <uvolnenZeZamestnani>FALSE</uvolnenZeZamestnani> 
+   <loginDisabled>FALSE</loginDisabled> 
+   <email> 
+      <item> 
+         <type>1</type> 
+         <email>john.keating@example.org</email> 
+         <description>veřejný e-mail</description> 
+      </item> 
+   </email> 
+</CreateOrganizationUserRequest>

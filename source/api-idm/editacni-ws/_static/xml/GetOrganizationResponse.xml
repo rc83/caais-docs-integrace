@@ -1,0 +1,58 @@
+<GetOrganizationResponse xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+    <name>Škola 1</name>
+    <contactAddress/>
+    <deliveryAddress/>
+    <email>
+        <item>
+            <type text="oficiální">1</type>
+            <email>info@example.org</email>
+            <description></description>
+        </item>
+    </email>
+    <telephoneNumber>
+        <item>
+            <type text="stolní">1</type>
+            <number>+420234567890</number>
+        </item>
+    </telephoneNumber>
+    <ico>00112233</ico>
+    <dic>CZ00112233</dic>
+    <typOrganizace text="školství">6</typOrganizace>
+    <bankAccount>
+        <item>
+            <number>9876543211</number>
+            <bankCode>0710</bankCode>
+            <description></description>
+        </item>
+    </bankAccount>
+    <officesHours>
+        <item>
+            <day text="Pondělí">1</day>
+            <from>08:00</from>
+            <to>12:00</to>
+        </item>
+        <item>
+            <day text="Pondělí">1</day>
+            <from>12:30</from>
+            <to>16:00</to>
+        <item>
+            <day text="Pátek">5</day>
+            <from>08:00</from>
+            <to>12:00</to>
+        </item>
+    </officesHours>
+    <subjectCode></subjectCode>
+    <url>
+        <item>
+            <type text="oficiální">1</type>
+            <url>http://www.example.org/</url>
+            <description></description>
+        </item>
+    </url>
+    <roleCentralniNakup>
+        <item text="Přístup do centrálního nákupu">ISCN</item>
+    </roleCentralniNakup>
+    <zruseno text="Ne">FALSE</zruseno>
+    <casZruseni></casZruseni>
+    <casPosledniZmeny>1766850672307</casPosledniZmeny>
+</GetOrganizationResponse>

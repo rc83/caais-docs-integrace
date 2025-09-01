@@ -1,0 +1,85 @@
+<GetSubjectResponse xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+    <isdsBox></isdsBox>
+    <name>Digitální a informační agentura</name>
+    <ico>17651921</ico>
+    <dic></dic>
+    <datumVzniku>2023-11-24</datumVzniku>
+    <preruseniPozastaveni text="Ne">FALSE</preruseniPozastaveni>
+    <rovmCode>17651921</rovmCode>
+    <spuuCode></spuuCode>
+    <rovmPusobnostOd></rovmPusobnostOd>
+    <rovmPusobnostDo></rovmPusobnostDo>
+    <rovmPozastaveniOd></rovmPozastaveniOd>
+    <rovmPozastaveniDo></rovmPozastaveniDo>
+    <rovmPreruseniOd></rovmPreruseniOd>
+    <rovmPreruseniDo></rovmPreruseniDo>
+    <rovmKategorie/>
+    <pravniForma text="Organizační složka státu">325</pravniForma>
+    <typInstituce text="Orgán státní správy">11</typInstituce>
+    <gpsPosition>50.09138450218157 14.475226930564196</gpsPosition>
+    <contactAddress>
+        <addressCode>28075820</addressCode>
+        <street>Na vápence</street>
+        <cityCode>554782</cityCode>
+        <city>Praha</city>
+        <region>Hlavní město Praha</region>
+        <postalCode>13000</postalCode>
+        <metropolitanDistrict>Praha 3</metropolitanDistrict>
+        <cityPart>Žižkov</cityPart>
+        <houseNumber>915</houseNumber>
+        <sequenceNumber>14</sequenceNumber>
+        <pragueDistrict>Praha 3</pragueDistrict>
+    </contactAddress>
+    <contactAddressPostalCode>13000</contactAddressPostalCode>
+    <contactAddressPoBoxCode></contactAddressPoBoxCode>
+    <deliveryAddress>
+        <addressCode>21745242</addressCode>
+        <street>Jugoslávská</street>
+        <cityCode>554782</cityCode>
+        <city>Praha</city>
+        <region>Hlavní město Praha</region>
+        <postalCode>12000</postalCode>
+        <metropolitanDistrict>Praha 2</metropolitanDistrict>
+        <cityPart>Vinohrady</cityPart>
+        <houseNumber>567</houseNumber>
+        <sequenceNumber>16</sequenceNumber>
+        <pragueDistrict>Praha 2</pragueDistrict>
+    </deliveryAddress>
+    <deliveryAddressPostalCode>13000</deliveryAddressPostalCode>
+    <deliveryAddressPoBoxCode></deliveryAddressPoBoxCode>
+    <email/>
+    <telephoneNumber>
+        <item>
+            <type text="stolní">1</type>
+            <number>+420225514760</number>
+        </item>
+    </telephoneNumber>
+    <aisRole>
+        <item text="Systémový administrátor">CAAIS_GUI.sysadmin</item>
+    </aisRole>
+    <prijataPusobnostVolby/>
+    <predanaPusobnostVolby/>
+    <prijataPusobnostAdmin/>
+    <predanaPusobnostAdmin/>
+    <bankAccount/>
+    <subjectCode></subjectCode>
+    <spisovaSluzba/>
+    <spisovaSluzbaUrl></spisovaSluzbaUrl>
+    <cestaFormulare></cestaFormulare>
+    <url>
+        <item>
+            <type text="oficiální">1</type>
+            <url>https://dia.gov.cz</url>
+            <description></description>
+        </item>
+    </url>
+    <isdsBoxState/>
+    <isOVM text="Ano">TRUE</isOVM>
+    <zruseno text="Ne">FALSE</zruseno>
+    <isdsBoxChangeTime></isdsBoxChangeTime>
+    <casZruseni></casZruseni>
+    <agendy>
+        <item agenda="A1721" text="Koordinace činností ve stavu kybernetického nebezpečí" platnostOd="2025-11-01" platnostDo="">CR11428</item>
+    </cinnostniRole>
+    <casPosledniZmeny>1766137865399</casPosledniZmeny>
+</GetSubjectResponse>

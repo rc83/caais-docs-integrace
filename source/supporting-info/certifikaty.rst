@@ -48,7 +48,11 @@ Podle zvoleného protokolu jsou využívány certifikáty AIS následujícím zp
      - identifikace a autentizace AIS v rámci mTLS spojení
      - - alespoň jeden platný certifikát
        - certifikát nesmí být registrován v jiné konfiguraci AIS
-
+   * - editační WS 1.1
+     - autentizační
+     - autentizace IdM v rámci mTLS spojení
+     - - alespoň jeden platný certifikát
+       - postačuje certifikát v libovolné konfiguraci AIS
 
 
 .. _si:certs:ais:issue:

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://userportal.novell.com/ws-edit/2/WS-2-1.1"
+           xmlns="http://userportal.novell.com/ws-edit/2/WS-2-1.1"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="IdentifyAgainstRobRequest">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Provede ztotozneni osoby spojene s danym uzivatelskym uctem</xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element type="xs:string" name="username" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Jmeno uctu, pro ktery se ztotozneni osoby ma provest.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element type="xs:date" name="dateOfBirth" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Datum narozeni osoby.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="placeOfBirth" minOccurs="0">
+                    <xs:complexType>
+                        <xs:annotation>
+                            <xs:documentation>Misto narozeni osoby.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleContent>
+                            <xs:annotation>
+                                <xs:documentation>Numericky kod statu, kde se osoba narodila. Viz ciselnik zakladniho
+                                    registru ROB, ktery lze stahnout z adresy: http://www.szrcr.cz/file/122
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:extension base="xs:string">
+                                <xs:attribute type="xs:int" name="countryCode" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="identificationCard" minOccurs="0">
+                    <xs:complexType>
+                        <xs:annotation>
+                            <xs:documentation>Typ (definovany atributem type) a cislo osobniho dokladu.
+                            </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="type" type="IdCardType" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="IdentifyAgainstRobResponse">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Vysledek ztotozneni osoby. V pripade uspesneho ztotozneni osoby je status OK.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element type="xs:string" name="status" minOccurs="1" maxOccurs="1"/>
+                <xs:element type="xs:string" name="description" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="GetManageableSubjectsRequest">
+        <xs:annotation>
+            <xs:documentation>Dotaz na seznam zkratek subjektu, ktere prevedly pusobnost lokalniho administratora na
+                subjekt pod kterym je pokladan dotaz.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType/>
+    </xs:element>
+
+    <xs:element name="GetManageableSubjectsResponse">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Seznam zkratek subjektu, ktere prevedly pusobnost lokelniho administratora na subjekt
+                    pod kterym je pokladan dotaz.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element name="subjects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:annotation>
+                                        <xs:documentation>Name - zkratka subjektu.
+                                            LaDelegationRights - priznak, zda ma tento subjekt nastavenu prenesenou pusobnost lokalniho administratora (ma pravo cteni i zapisu v subjektu).
+                                            Hodnota "inactive" znamena, ze preneseni pusobnosti neni dokonceno; tj. "podrizeny" subjekt nastavil predanou pusobnost, ale domovsky subjekt jeste nenastavil prijatou pusobnost.
+                                            Hodnota "active" znamena, ze prenesena pusobnost je funkcni; tj. je nastavena predana pusobnost "podrizenym" subjektem i prijata pusobnost domovskym subjektem.
+                                            ReaderDelegationRights - Priznak, zda ma tento subjekt nastavenu prenesenou pusobnost cteni udaju subjektu (ma pravo pouze cteni v subjektu).
+                                            Hodnoty "inactive" a "active" jsou nastavovany podle stejnych pravidel jako u atributu "LaDelegationRights".
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                    <xs:attribute type="xs:string" name="name" use="required"/>
+                                    <xs:attribute type="RightsType" name="laDelegationRights" use="optional"/>
+                                    <xs:attribute type="RightsType" name="readerDelegationRights" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="HistoryDataRequest">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Dotaz na seznam zmenenych udaju v JIP za definovane casove obdobi.</xs:documentation>
+            </xs:annotation>
+            <xs:attribute type="xs:dateTime" name="fromDate" use="optional"/>
+            <xs:attribute type="xs:dateTime" name="toDate" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="HistoryDataResponse">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Seznam zmenenych udaju v JIP za definovane casove obdobi</xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element name="attribute" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:annotation>
+                            <xs:documentation>Struktura s datovym atributem, ktery se zmenil.</xs:documentation>
+                        </xs:annotation>
+                        <xs:sequence>
+                            <xs:element name="data" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:annotation>
+                                        <xs:documentation>Struktura s daty zmeneneho atributu.</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:sequence>
+                                        <xs:element name="item" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>Hodnota atributu. Je-li atribut vicehodnotovy, v
+                                                    response bude pritomno vice elementu item.
+                                                </xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="AttributeType" use="optional">
+                                        <xs:annotation>
+                                            <xs:documentation>Typ dat v atributu. Povolene hodnoty jsou
+                                                string|binary. Pokud je typ binary je hodnota reprezentovana
+                                                retezcem zasifrovanym v Base64
+                                            </xs:documentation>
+                                        </xs:annotation>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="operation" type="OperationType" use="required">
+                            <xs:annotation>
+                                <xs:documentation>Operace, ktera byla nad datovym atributem vykonana.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute type="xs:dateTime" name="changeTime" use="required">
+                            <xs:annotation>
+                                <xs:documentation>Cas provedeni dane operace nad atributem.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute type="xs:string" name="name" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Nazev atributu.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute type="xs:string" name="attributePath" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Cesta k atributu v ramci subjektu.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute type="xs:string" name="subjectPath" use="required">
+                            <xs:annotation>
+                                <xs:documentation>Cesta k subjektu v ramci JIP.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:integer" name="total" use="required">
+                <xs:annotation>
+                    <xs:documentation>Pocet zaznamu v odpovedi.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="GetListOfValuesRequest">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Vraci ciselnik hodnot, ktery je pouzivan v editacnich webovych sluzbach KAAS.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element name="listName" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:annotation>
+                            <xs:documentation>Nazev ciselniku, ktery se ma vratit.</xs:documentation>
+                        </xs:annotation>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="GetListOfValuesResponse">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Ciselnik hodnot, ktery je pouzivan v editacnich webovych sluzbach KAAS.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element name="list">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:annotation>
+                                        <xs:documentation>Element predstavujici jednu polozku ciselniku.
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="key" use="required">
+                                                <xs:annotation>
+                                                    <xs:documentation>Interni identifikator polozky v ciselniku.
+                                                    </xs:documentation>
+                                                </xs:annotation>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name" use="required">
+                            <xs:annotation>
+                                <xs:documentation>Nazev ciselniku</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="type" type="ListType" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="IsAliveRequest">
+        <xs:annotation>
+            <xs:documentation>
+                Zjistuje zda jsou webove sluzby aktivni.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType/>
+    </xs:element>
+
+    <xs:element name="IsAliveResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="status"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ErrorResponse">
+        <xs:complexType>
+            <xs:annotation>
+                <xs:documentation>Odpoved v pripade chyby pri zpracovani pozadavku.</xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+                <xs:element type="xs:string" name="Code">
+                    <xs:annotation>
+                        <xs:documentation>Kod chyby</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element type="xs:string" name="Message">
+                    <xs:annotation>
+                        <xs:documentation>Chybova zprava.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="IdCardType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ID">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        ID - obcansky prukaz
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="P">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        P - cestovni pas
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="IR">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        IR - povoleni k pobytu
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="VS">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        VS - vizovy stitek
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PS">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        PS - pobytovy stitek
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="OP">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        OP - občanský průkaz bez MRZ
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CA">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        CA - cestovní průkaz
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="IX">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        IX - knížečka (označení CIS: PB, PE, PO, PP, PR)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="IE">
+                <xs:annotation>
+                    <xs:documentation xml:lang="cs">
+                        IE - tiskopis (označení CIS: PM, OR)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="OperationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="insert"/>
+            <xs:enumeration value="update"/>
+            <xs:enumeration value="delete"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AttributeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="string"/>
+            <xs:enumeration value="binary"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ListType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="string"/>
+            <xs:enumeration value="binary"/>
+            <xs:enumeration value="structured"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="RightsType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="active"/>
+            <xs:enumeration value="inactive"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

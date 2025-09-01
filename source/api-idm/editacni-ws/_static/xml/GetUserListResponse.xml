@@ -1,0 +1,11 @@
+<GetUserListResponse total="1" xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+    <row object-id="humphrey_appleby">
+        <isPrimaryPerson text="Ano">TRUE</isPrimaryPerson>
+        <firstname>Humphrey</firstname>
+        <surname>Appleby</surname>
+        <loginDisabled text="Ne">FALSE</loginDisabled>
+        <userAllRole/>
+        <verejnaOsoba text="Ne">FALSE</verejnaOsoba>
+        <casPosledniZmeny>+57046-11-08T03:55:46Z</casPosledniZmeny>
+    </row>
+</GetUserListResponse>

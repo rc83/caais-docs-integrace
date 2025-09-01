@@ -1,0 +1,3 @@
+<GetListOfValuesRequest xmlns="http://userportal.novell.com/ws-edit/2/WS-2-1.1">
+    <listName>ciselnik_statu</listName>
+</GetListOfValuesRequest>

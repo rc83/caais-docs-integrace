@@ -1,0 +1,13 @@
+<GetOrganizationUserResponse xmlns="http://userportal.novell.com/ws/WS-LA-1.1">
+    <firstname>John</firstname>
+    <surname>Keating</surname>
+    <loginDisabled text="Ne">FALSE</loginDisabled>
+    <email>
+        <item>
+            <type text="oficiální">1</type>
+            <email>john.keating@example.org</email>
+        </item>
+    </email>
+    <uvolnenZeZamestnani text="Ne">FALSE</uvolnenZeZamestnani>
+    <casPosledniZmeny>1766850897</casPosledniZmeny>
+</GetOrganizationUserResponse>
