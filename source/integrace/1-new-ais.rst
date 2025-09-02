@@ -7,7 +7,7 @@ Integrace nového AIS na CAAIS
 On-boarding
 ===========
 
-Chcete-li integrovat svůj AIS na CAAIS, kontaktujte nás prostřednictvím `Service Desk DIA`_. Pro urychlení komunikace tiket pojmenujte „Integrace AIS {zkratka AIS} do CAAIS“. Následně se domluvíme na on-line schůzce, kde dořešíme podrobnosti integrace. Výstupem schůzky bude předání přístupu do :ref:`integračního prostředí <si:env>` s konfigurací na míru vašemu AIS.
+Chcete-li integrovat svůj AIS na CAAIS, kontaktujte nás prostřednictvím `Service Desk DIA`_. Pro urychlení komunikace tiket pojmenujte „Integrace AIS {zkratka AIS} do CAAIS“. Následně se domluvíme na on-line schůzce, kde dořešíme podrobnosti integrace. Výstupem schůzky bude předání přístupu do :ref:`integračního prostředí <si:env:int>` s konfigurací na míru vašemu AIS.
 
 Osvědčuje se, pokud se schůzky mohou účastnit
 
@@ -87,7 +87,7 @@ AIS současně ve své konfiguraci požaduje, s jakou minimální úroveň zár
 Integrační (testovací) prostředí
 ================================
 
-Integrační prostředí test-ext slouží pro ověření integrace AIS vůči CAAIS. Jakmile projevíte zájem o integraci AIS na CAAIS, připravíme vám testovací konfiguraci a předáme vám ji do správy skrze fiktivního uživatelského účtu. Pro úvodní nastavení funkční konfigurace potřebujeme znát:
+:ref:`Integrační prostředí test-ext<si:env:int>` slouží pro ověření integrace AIS vůči CAAIS. Jakmile projevíte zájem o integraci AIS na CAAIS, připravíme vám testovací konfiguraci a předáme vám ji do správy skrze fiktivního uživatelského účtu. Pro úvodní nastavení funkční konfigurace potřebujeme znát:
 
 - název AIS,
 - zkratku AIS (slouží též jako identifikátor konfigurace v autentizačních protokolech; doporučujeme omezit na ASCII znaky),
@@ -112,7 +112,7 @@ Pro testovací prostředí není nutné zařizovat komerční certifikáty. Na z
 Produkční prostředí
 ===================
 
-Nastavení produkčního prostředí provádí primárně garant AIS ve spolupráci s dodavatelem.
+Nastavení :ref:`produkčního prostředí <si:env:prod>` provádí primárně garant AIS ve spolupráci s dodavatelem.
 
 
 .. admonition:: Platnost certifikátu

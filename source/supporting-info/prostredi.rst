@@ -34,10 +34,19 @@ URL prostředí mají podobu *https://caais[-zkratka prostředí].<rozhraní>/*,
      - 6.00–22.00
 
 
+
+.. _si:env:prod:
+
+Produkční prostředí
+-------------------
+
+*zatím prázdné*
+
+
 .. _si:env:edu:
 
 Školicí prostředí (edu)
----------------------------------
+-----------------------
 
 `Školicí prostředí <edu_>`_ je určeno zejména lokálním administrátorům k praktickému seznámená s CAAIS a co nejvíce se blíží produkčnímu prostředí.
 
