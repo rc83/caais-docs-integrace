@@ -50,7 +50,7 @@ Produkční prostředí
 
 `Školicí prostředí <edu_>`_ je určeno zejména lokálním administrátorům k praktickému seznámená s CAAIS a co nejvíce se blíží produkčnímu prostředí.
 
-Databáze školicího prostředí je obnovována v pátek odpoledne na základě snímku produkční databáze, tudíž jakékoli změny provedené na školicím prostředí jsou pouze dočasné povahy. 
+Databáze školicího prostředí je obnovována v pondělí časně ráno na základě snímku produkční databáze, tudíž jakékoli změny provedené na školicím prostředí jsou pouze dočasné povahy.
 
 .. admonition:: Nastavení hesla
    :class: warning
