@@ -6,20 +6,21 @@ Certifikáty
 
 Certifikáty se v CAAIS používají jednak jako druhý faktor při autentizaci uživatele prostřednicvím CAAIS IdP, jednak pro zabezpečení komunikace mezi připojeným AIS a CAAIS.
 
+
+.. _si:certs:user:
+
 Uživatel
 ========
 
 Pokud uživatel využívá CAAIS IdP a potřebuje se přihlašovat na úrovni záruky značná, musí mít v CAAIS IdP registrovaný autentizační certifikát vydaný :ref:`podporovanou certifikační autoritou <si:ca>`. Z důvodu bezpečnosti a certifikačních politik *nelze* k autentizaci používat certifikát pro kvalifikovaný podpis.
 
 
+.. _si:certs:ais:
+
 Připojený AIS
 =============
 
 Podle zvoleného protokolu jsou využívány certifikáty AIS následujícím způsobem:
-
-.. - **OIDC** — autentizace AIS v rámci mTLS spojení
-.. - **SAML 2.0** — (i) podpis požadavku a (ii) dešifrování assertion v odpovědi
-.. - **JIP/KAAS legacy** — identifikace AIS a jeho autentizace v rámci mTLS spojení
 
 .. list-table:: Využití cerfitikátů autentizačními protokoly
    :header-rows: 1
@@ -48,6 +49,44 @@ Podle zvoleného protokolu jsou využívány certifikáty AIS následujícím zp
      - - alespoň jeden platný certifikát
        - certifikát nesmí být registrován v jiné konfiguraci AIS
 
+
+
+.. _si:certs:ais:issue:
+
+Postup vydání certifikátu pro AIS
+---------------------------------
+
+Na vydání certifikátu pro AIS spolupracuje obvykle několika stran a ne všichni musí být s tímto procesem dokonale seznámeni. Přinášíme proto stručný postup.
+
+1. **Vytvoření páru klíčů** – soukromého a veřejného. Jelikož soukromý klíč nesmí opustit bezpečné prostředí, tuto činnost zpravidla provádí poskytovatel služby (správce běhového prostředí). Použité kryptografické algoritmy musí vyhovovat certifikační politice zvolené certifikační autority a doporučení NÚKIB (RSA 3072, RSA 4096, P-256, P-384 atp.).
+
+#. **Vytvoření žádosti o vydání certifikátu** – Certificate Signing Request (CSR). Žádost připraví opět poskytovatel služby, neboť musí být podepsána soukromým klíčem. Žádost obsahuje hodnoty několika atributů. Atribut *Common Name* je vždy povinný a další atributy uvedené v tabulce níže jsou doporučené. Vyžadované a povolené atributy pak plynou z politiky zvolené certifikační autority. Hodnoty atributů sdělí poskytovateli služby technický správce AIS.
+
+  .. list-table:: Atributy certifikátu a žádosti o certifikát
+     :widths: 22 80
+     :header-rows: 1
+
+     * - Atribut
+       - Popis
+     * - CN (Common Name)
+       - Identifikace klientského systému. Měl by to být název připojovaného AIS, případně jeho zkratka či doménové jméno, pod kterým je AIS provozován. CAAIS tuto hodnotu (zatím) nevyužívá.
+     * - O (Organization)
+       - Žadatel o certifikát. Obvykle provozovatel AIS, například příslušné ministerstvo.
+     * - OU (Organization Unit)
+       - Dle zvyklostí provozovatele, například odbor technického správce AIS. Volitelné.
+     * - C (Country)
+       - CZ
+
+  Samotná žádost již neobsahuje žádné citlivé informace a lze ji dále předat otevřeným kanálem žadateli o certifikát.
+
+3. **Vydání certifikátu.** Žadatel o certifikát převezme žádost o certifikát, zkontroluje ji (včetně otisku veřejného klíče) a v souladu s rámcovou smlouvou, kterou má jeho instituce uzavřena s vybranou certifikační autoritou, jí žádost postoupí.
+
+#. **Instalace certifikátu.** Po získání certifikátu jej žadatel o certifikát předá poskytovateli služby, aby jej mohl instalovat do běhového prostředí AIS, a správci konfigurace AIS v CAAIS, aby jej mohl zaregistrovat. Certifikát neobsahuje citlivé informace, a lze jej tak předat otevřeným kanálem.
+
+.. admonition:: Typ certifikátu
+   :class: info
+
+   AIS potřebuje klientský certifikát pro server. U certifikačních autorit se lze setkat s pojmenováním komerční serverový certifikát. Není nutné pořizovat doménový certifikát.
 
 
 .. _si:ca:
