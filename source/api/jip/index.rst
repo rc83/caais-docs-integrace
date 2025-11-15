@@ -11,7 +11,7 @@ JIP/KAAS legacy API
    :caption: Obsah:
 
    1-uvod
-   2-proces
+   2-procesni-popis
    3-technicka-specifikace-klasicka
    4-technicka-specifikace-prima
    5-ciselniky

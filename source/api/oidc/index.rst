@@ -9,5 +9,5 @@ OIDC API
    :caption: Obsah:
 
    1-uvod
-   2-proces-autentizace
+   2-procesni-popis
    3-technicka-specifikace
