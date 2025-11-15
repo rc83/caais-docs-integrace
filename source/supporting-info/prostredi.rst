@@ -14,7 +14,7 @@ URL prostředí mají podobu *https://caais[-zkratka prostředí].<rozhraní>/*,
 .. list-table:: Běhová prostředí CAAIS
    :header-rows: 1
    :name: caais_env
-   :widths: 1 1 5 2
+   :widths: 11 10 50 20
 
    * - Prostředí
      - Zkratka

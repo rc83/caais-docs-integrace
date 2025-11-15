@@ -9,7 +9,7 @@ Certifikáty se v CAAIS používají jednak jako druhý faktor při autentizaci
 Uživatel
 ========
 
-Pokud uživatel využívá CAAIS IdP a potřebuje se přihlašovat na úrovni záruky značná, musí mít v CAAIS IdP registrovaný autentizační certifikát vydaný :ref:`podporovanou certifikační autoritou <si:ca>`. Z důvodu bezpečnosti a certifikačních politik *nelze* k autentizaci používat certifikát pro kvalifikovaný podpis.
+Pokud uživatel využívá CAAIS IdP a potřebuje se přihlašovat na úrovni záruky značná, musí mít v CAAIS IdP registrovaný autentizační certifikát vydaný :ref:`podporovanou certifikační autoritou <si:ca>`. Z důvodu bezpečnosti a certifikačních politik *nelze* k autentizaci používat certifikát pro kvalifikovaný podpis.
 
 
 Připojený AIS

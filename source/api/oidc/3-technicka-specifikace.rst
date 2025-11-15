@@ -78,7 +78,7 @@ Tabulka níže obsahuje seznam dostupných parametrů, které se posílají na *
      - Parametr, užívaný k zabránění tzv. „replay“ útokům. Obsahuje náhodně vygenerovanou hodnotu. Pokud ji AIS pošle, CAAIS přidá „nonce“ claim do identity tokenu. AIS poté musí ověřit, že obdržená hodnota v daném claimu odpovídá odeslané hodnotě. Doporučujeme používat pro zvýšení bezpečnosti.
    * - ``state``
      - ne
-     - Po úspěšném přihlášení uživatele provede CAAIS přesměrování na AIS a beze změny pošle tuto hodnotu v parametrech. Toto má dvoje využití, jenž je možné kombinovat:
+     - Po úspěšném přihlášení uživatele provede CAAIS přesměrování na AIS a beze změny pošle tuto hodnotu v parametrech. Toto má dvoje využití, jež je možné kombinovat:
        
        I. AIS si přes proces přihlašování drží stav (například variabilní parametry URL, kam je uživatel po přihlášení přesměrován). Citlivé údaje by měly být zašifrovány.
        
@@ -516,9 +516,9 @@ Tabulka níže obsahuje seznam dostupných query parametrů, které se posílaj�
      - ID Token, který AIS obdržel od CAAIS při přihlášení uživatele. Slouží k identifikaci sezení, jenž se ukončuje.
    * - ``state``
      - ne
-     - Po odhlášení uživatele provede CAAIS přesměrování na AIS a beze změny pošle tuto hodnotu v parametrech. Toto má dvoje využití, jenž je možné kombinovat:
+     - Po odhlášení uživatele provede CAAIS přesměrování na AIS a beze změny pošle tuto hodnotu v parametrech. Toto má dvoje využití, jež je možné kombinovat:
        
-       I. AIS si přes proces přihlašování drží stav (například variabilní parametry URL, kam je uživatel po odhlášení přesměrován). Citlivé údaje by měly být zašifrovány.
+       I. AIS si přes proces odhlašování drží stav (například variabilní parametry URL, kam je uživatel po odhlášení přesměrován). Citlivé údaje by měly být zašifrovány.
        
        II. Ochrana před Cross-Site Request Forgery (CSRF) útoky. Parametr obsahuje náhodnou hodnotu. AIS následně ověřuje, že obdržená hodnota odpovídá té, kterou odeslal při přesměrování uživatele na CAAIS.
 
