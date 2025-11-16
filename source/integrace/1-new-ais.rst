@@ -81,7 +81,36 @@ Poskytovatelé identity CAAIS-IdP & NIA
 
 V produkčním prostředí jest lze využít pro přihlášení různé IdP – aktuálně interní CAAIS-IdP a NIA – Identitu občanu. Z pohledu AIS je volba IdP transparentní. V konfiguraci AIS však lze povolit jen určité IdP.
 
-AIS současně ve své konfiguraci požaduje, s jakou minimální úroveň záruky (LoA) ověření se může uživatele přihlásit. Ve většině případů vyhovuje *značná (substantial)* dle eIDAS. 
+AIS současně ve své konfiguraci požaduje, s jakou minimální úroveň záruky (LoA) ověření se může uživatele přihlásit. Ve většině případů vyhovuje *značná (substantial)* dle eIDAS.
+
+
+Fáze integrace
+==============
+
+Vývoj a integrační testování
+----------------------------
+
+Vývoj a integrační testování probíhají na integračním prostředí test-ext. Zapojen je především dodavatel AIS a správce integračního prostředí CAAIS z DIA, který připraví konfiguraci AIS v CAAIS a předá ji dodavateli. Používají se fiktivní uživatelské účty a testovací certifikáty. Spolupráce dalších stran není nutná.
+
+
+Uživatelské testování
+---------------------
+
+Testování reálnými uživateli pomocí jejich reálných účtů probíhá vůči testovací či školicí konfigurace AIS v *produkčním CAAIS*. Je vhodné nás o chystaném provozu proti produkčnímu CAAIS informovat a případně si domluvit schůzku k ujasnění postupu.
+
+Školicí konfiguraci AIS v produkčním CAAIS zakládá lokální administrátor CAAIS instituce (úřadu), která AIS provozuje. Při tom nastaví pověřenému uživateli ze své instituce, obvykle technickému správci, roli garanta AIS pro správu založené konfigurace. Ten následně ve spolupráci s dodavatelem konfiguraci AIS dokončí.
+
+Součástí konfigurace je i registrace :ref:`certifikátů pro komunikaci mezi AIS a CAAIS<si:certs:ais>`.
+
+Po nastavení konfigurace jest lze oslovit lokální administrátory institucí, které se testování účastní, aby přidělili uživatelům patřičné přístupové a činnostní role. Žádost o přidělení rolí musí být dostatečně specifická: Měla by obsahovat název a zkratku konfigurace AIS (rozlišení produkce a testování) a názvy přidělovaných rolí. Lokální administrátory CAAIS většinou oslovíte prostřednictvím svého koordinátora testování v dané instituci.
+
+
+Pre-produkce a produkce
+-----------------------
+
+Nastavení produkční konfigurace AIS v CAAIS probíhá obdobně jako školicí konfigurace. Informujte nás prosím s dostatečným předstihem, kdy se chystáte produkční provoz spustit, abychom byli připraveni stran uživatelské podpory.
+
+V této fázi je velice důležitá přesná a úplná komunikace s budoucími uživateli AIS (institucionálními i lidmi), se kterou vám rádi pomůžeme. Zejména v roce 2026 bude pro mnoho institucí CAAIS ještě poměrně novým systémem, se kterým teprve nabírají zkušenosti.
 
 
 Integrační (testovací) prostředí
@@ -112,7 +141,9 @@ Pro testovací prostředí není nutné zařizovat komerční certifikáty. Na z
 Produkční prostředí
 ===================
 
-Nastavení :ref:`produkčního prostředí <si:env:prod>` provádí primárně garant AIS ve spolupráci s dodavatelem.
+Nastavení :ref:`produkčního prostředí <si:env:prod>` provádí primárně garant AIS ve spolupráci s dodavatelem. Pro napojení AIS na CAAIS je nutné si obstarat patřičný :ref:`komerční serverový certifikát <si:certs>`.
+
+Produkční prostředí CAAIS je dostupné jak z CMS, tak z Internetu. Není nutné žádat o úpravy firewallu na straně CAAIS, ni nám poskytovat IPv4 a IPv6 rozsah vašeho AIS.
 
 
 .. admonition:: Platnost certifikátu
