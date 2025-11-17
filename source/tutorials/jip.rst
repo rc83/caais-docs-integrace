@@ -24,7 +24,7 @@ Přihlášení
 
 Přihlásíte se to systému jako Humphrey Appleby a vybereme jeho profil na Ministerstvu administrativních záležitostí.
 
-.. figure:: images/fig02.png
+.. figure:: images/fig02.webp
    :width: 1000px
 
 Základní údaje
@@ -38,7 +38,7 @@ Jako **povolenou doménu** zvolíme *gov.cz*.
 
 Návratovou URL po autentizaci necháme prázdnou – slouží pouze pro AIS využívající legacy protokol JIP/KAAS. **Návratovou URL po autentizaci** vyplníme dle vlastní aplikace – na tuto adresu je uživatel po autentizaci přesměrován spolu s tokenem (*sessionId*) přihlášení.
 
-.. figure:: images/fig03.jip.png
+.. figure:: images/fig03.jip.webp
    :width: 1000px
 
 Správce konfigurace AIS
@@ -46,7 +46,7 @@ Správce konfigurace AIS
 
 V dalším kroku přiřadíme AIS **správce**. Může jím být jakýkoli uživatel provozovatele. Pro jednoduchost volíme sami sebe. Po založení má správce pravomoc dokončit nastavení AIS.
 
-.. figure:: images/fig04.png
+.. figure:: images/fig04.webp
    :width: 1000px
 
    
@@ -61,7 +61,7 @@ V dalším kroku do systému nahrajeme veřejnou část certifikátu pro autent
    Stejný certifikát nesmí být použit jako autentizační u jiné konfiguraci AIS na daném prostředí CAAIS.
 
 
-.. figure:: images/fig05.png
+.. figure:: images/fig05.webp
    :width: 1000px
 
    
@@ -70,7 +70,7 @@ Výběr Identity Providera
 
 Po založení AIS musíme ještě bezpodmínečně vybrat alespoň jednu službu, proti které budeme uživatele ověřovat. Na záložce **LoA** vybereme *CAAIS_IDP*, neb ta jediná je na testovacím prostředí aktivní a změnu nastavení uložíme.
 
-.. figure:: images/fig06.png
+.. figure:: images/fig06.webp
    :width: 1000px
 
 Otestování konfigurace
@@ -78,7 +78,7 @@ Otestování konfigurace
    
 Nyní můžeme úspěšné založení AIS v CAAIS otestovat. Na adrese `https://externalauthapi.caais-test-ext.gov.cz/login?atsId=MAZ_FORMS`, kde místo `MAZ_FORMS` uvedete kód vlastního AIS, by se měla zobrazit přihlašovací stránka včetně CAAIS-IdP jako zdroje pro ověření uživatele.
 
-.. figure:: images/fig07.oidc.png
+.. figure:: images/fig07.oidc.webp
    :width: 1000px
 
 

@@ -61,7 +61,7 @@ Přihlášení
 
 Přihlásíte se to systému jako Humphrey Appleby a vybereme jeho profil na Ministerstvu administrativních záležitostí.
 
-.. figure:: images/fig02.png
+.. figure:: images/fig02.webp
    :width: 1000px
 
 Základní údaje
@@ -75,7 +75,7 @@ Jako **povolenou doménu** zvolíme *gov.cz*.
 
 Návratovou URL po autentizaci necháme prázdnou – slouží pouze pro AIS využívající legacy protokol JIP/KAAS. **Povolenou návratovou URL pro SAML a OIDC** vyplníme dle vlastní aplikace – na tuto adresu je uživatel po autentizaci přesměrován spolu s podepsanými a zašifrovanými autentizačními a autorizačními údaji SAML. (Na rozdíl od autentizace přes OIDC protokol lze zadat jen jednu adresu; k adresám předávaným v SAML požadavku CAAIS nepřihlíží. [Prakticky neověřeno, plyne z dokumentace dodavatele.])
 
-.. figure:: images/fig03.png
+.. figure:: images/fig03.webp
    :width: 1000px
 
 Správce konfigurace AIS
@@ -83,7 +83,7 @@ Správce konfigurace AIS
 
 V dalším kroku přiřadíme AIS **správce**. Může jím být jakýkoli uživatel provozovatele. Pro jednoduchost volíme sami sebe. Po založení má správce pravomoc dokončit nastavení AIS.
 
-.. figure:: images/fig04.png
+.. figure:: images/fig04.webp
    :width: 1000px
    
 Podpisový a šifrovací certifikát
@@ -91,7 +91,7 @@ Podpisový a šifrovací certifikát
 
 V dalším kroku do systému nahrajeme veřejnou část **podpisového certifikátu** a **certifikátu pro šifrování**, jak jsme je obdrželi od (testovací) certifikační autority. Může se jednat o stejný certifikát, pokud je určen k podpisu i k šifrování. Registrovaný lze mít ovšem *pouze jeden* certifikát pro podpis (administrativní omezení) a *pouze jeden* certifikát pro šifrování. CAAIS nepřijme SAML 2.0  požadavek, pokud není podepsán (jediným) registrovaným podpisovým certifikátem; odpověď pak vždy šifruje k tomu (jediným) registrovaným certifikátem.
 
-.. figure:: images/fig05.saml.png
+.. figure:: images/fig05.saml.webp
    :width: 1000px
 
    
@@ -100,7 +100,7 @@ Výběr Identity Providera
 
 Po založení AIS musíme ještě bezpodmínečně vybrat alespoň jednu službu, proti které budeme uživatele ověřovat. Na záložce **LoA** vybereme *CAAIS_IDP*, neb ta jediná je na testovacím prostředí aktivní a změnu nastavení uložíme.
 
-.. figure:: images/fig06.png
+.. figure:: images/fig06.webp
    :width: 1000px
 
 .. include:: role.inc.rst 
