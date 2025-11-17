@@ -40,7 +40,7 @@ AIS musí pro využívání tohoto typu služby na jedné straně implementovat 
 Diagram procesu autentizace a autorizace
 ----------------------------------------
 
-.. figure:: images/login-token-process.png
+.. figure:: images/login-token-process.webp
    :width: 1000px
 
    Diagram autentizace uživatele klasickou autentizační webovou službou protokolem JIP/KAAS (legacy).
@@ -69,7 +69,7 @@ Diagram procesu autentizace a autorizace
 Sekvenční diagram komunikace a předávání dat
 --------------------------------------------
 
-.. figure:: images/login-token-sequence.png
+.. figure:: images/login-token-sequence.webp
    :width: 1000px
 
    Sekvenční diagram autentizace uživatele klasickou autentizační webovou službou protokolem JIP/KAAS (legacy).
@@ -119,7 +119,7 @@ AIS musí pro využívání tohoto typu služby zobrazovat na přihlašovací st
 Diagram procesu autentizace a autorizace
 ----------------------------------------
 
-.. figure:: images/login-credentials-process.png
+.. figure:: images/login-credentials-process.webp
    :width: 1000px
 
    Diagram autentizace uživatele přímou autentizační webovou službou protokolem JIP/KAAS (legacy).
@@ -152,7 +152,7 @@ Sekvenční diagram komunikace a předávání dat
 --------------------------------------------
 
 
-.. figure:: images/login-credentials-sequence.png
+.. figure:: images/login-credentials-sequence.webp
    :width: 1000px
 
    Sekvenční diagram autentizace uživatele přímou autentizační webovou službou protokolem JIP/KAAS (legacy).
@@ -202,7 +202,7 @@ V případě, že uživatel provádí odhlášení v systému AIS (např. tlač
 Diagram procesu odhlášení
 -------------------------
 
-.. figure:: images/logout-process.png
+.. figure:: images/logout-process.webp
    :width: 400px
 
    Diagram odhlášení uživatele protokolem JIP/KAAS (legacy).
@@ -225,7 +225,7 @@ Sekvenční diagram komunikace a předávání dat
 --------------------------------------------
 
 
-.. figure:: images/logout-sequence.png
+.. figure:: images/logout-sequence.webp
    :width: 1000px
 
    Sekvenční diagram odhlášení uživatele protokolem JIP/KAAS (legacy).

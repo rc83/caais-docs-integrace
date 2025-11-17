@@ -22,7 +22,7 @@ CAAIS podporuje proces přihlášení `Authorization Code Flow (ACF) <oidc_acf_>
   
 Podrobněji zachycuje proces autentizace následující diagram:
 
-.. figure:: images/diagram-oidc.png
+.. figure:: images/diagram-oidc.webp
    :width: 1000px
 
    Diagram autentizace uživatele protokolem OIDC.

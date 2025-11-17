@@ -10,7 +10,7 @@ V SAML jsou definovány 3 základní role účastnící se komunikace:
     - service provider = v našem případě AIS
     - identity provider = v našem případě CAAIS-IdP
 
-.. figure:: images/diagram-saml.png
+.. figure:: images/diagram-saml.webp
    :width: 1000px
 
    Diagram autentizace uživatele protokolem OIDC.
