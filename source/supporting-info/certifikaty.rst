@@ -105,3 +105,17 @@ Další certifikační autority uznávané v rámci eIDAS přidáme na žádost
 
 
 Pro *integrační testování* :ref:`v prostředí test-ext <si:env:int>` lze navíc používat i testovací certifikáty, pokud je některá výše uvedená certifikační autorita nabízí. Další možností je nechat si vystavit testovací certifikáty interní certifikační autoritou CAAIS na základě Certificate Signing Request (CSR), který nám zašlete.
+
+
+.. _si:certs:faq:
+
+Často kladené otázky
+====================
+
+.. _si:certs:faq-1:
+
+**Otázka 1: Zkoušel jsem přidat certifikát QCA k uživateli a při tom jsem zjistil, že máte v seznamu autorit vydávající certifikáty špatně uvedenou autoritu pro QCA certifikáty PostSignum – chybí CN=PostSignum QCA 4.**
+
+Kvalifikované certifikáty *nelze* pro autentizaci uživatelů použít, jsou určeny výhradně pro kvalifikovaný podpis dle eIDAS. Kvalifikované certifikáty neobsahují hodnotu Client Authentication (OID 1.3.6.1.5.5.7.3.2) v atributu Extended Key Usage (EKU). Toto omezení dané certifikační politikou brání zneužití kvalifikovaného podpisu. Je nutné použít certifikáty vydané jako komerční; v případě Postsignum se jedná o certifikáty podepsané `mezilehlým certifikátem`_ CN=PostSignum Public CA 4 či CN=PostSignum Public CA 5 (údaj pro rok 2025). Tyto mezilehlé certifikáty CAAIS rozpoznává.
+
+.. _mezilehlým certifikátem: https://www.postsignum.cz/certifikaty_autorit.html
