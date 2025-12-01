@@ -92,6 +92,11 @@ Vývoj a integrační testování
 
 Vývoj a integrační testování probíhají na integračním prostředí test-ext. Zapojen je především dodavatel AIS a správce integračního prostředí CAAIS z DIA, který připraví konfiguraci AIS v CAAIS a předá ji dodavateli. Používají se fiktivní uživatelské účty a testovací certifikáty. Spolupráce dalších stran není nutná.
 
+.. admonition:: Integrační versus aplikační testování
+   :class: warning
+
+   Prostředí test-ext je určeno výhradně pro integrační testování. Aplikační testování AIS proti tomuto prostředí není podporováno. Pokud předpokládáte aplikační testování, které klade netriviální nároky na správu identit (vyžaduje množství fiktivních uživatelů, různá nastavení oprávnění atp.), je potřeba s tím počítat již v návrhu architektury aplikace a pro aplikační testování mít připraveno jiné vhodné řešení.
+
 
 Uživatelské testování
 ---------------------
