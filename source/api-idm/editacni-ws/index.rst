@@ -15,4 +15,5 @@ Editační webové služby (legacy)
    5-metody-edit-3
    6-neimplementovane-metody
    7-chybove-zpravy
+   8-nastroje
 

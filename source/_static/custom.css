@@ -57,3 +57,7 @@ div.rst-content table.docutils {
 div.rst-content table.docutils caption {
     text-align: left;
 }
+
+.sd-octicon {
+    vertical-align: -0.125em;
+}
