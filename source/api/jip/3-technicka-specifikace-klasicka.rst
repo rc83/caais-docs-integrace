@@ -16,18 +16,18 @@ JIP/KAAS legacy API využívá SOAP protokol verze 1.1. CAAIS k udržení maxi
 
    * - Veze
      - WSDL
-     - XML jmenný prostor
+     - XMLNS
    * - 2.1
-     - `GetCredential_v2_1.wsdl <wsdl/GetCredential_v2_1.wsdl>`_
+     - :download:`GetCredential_v2_1.wsdl <_static/wsdl/GetCredential_v2_1.wsdl>`
      - http\://agw-as.cz/ats-ws/atsSzr/v2_1
    * - 3.4
-     - `GetCredential_v3_4.wsdl <wsdl/GetCredential_v3_4.wsdl>`_
+     - :download:`GetCredential_v3_4.wsdl <_static/wsdl/GetCredential_v3_4.wsdl>`
      - http\://agw-as.cz/ats-ws/atsSzr/v3_4
    * - 4.1
-     - `GetCredential_v4_1.wsdl <wsdl/GetCredential_v4_1.wsdl>`_
+     - :download:`GetCredential_v4_1.wsdl <_static/wsdl/GetCredential_v4_1.wsdl>`
      - http\://agw-as.cz/ats-ws/atsSzr/v4_1
    * - 4.2
-     - `GetCredential_v4_2.wsdl <wsdl/GetCredential_v4_2.wsdl>`_
+     - :download:`GetCredential_v4_2.wsdl <_static/wsdl/GetCredential_v4_2.wsdl>`
      - http\://agw-as.cz/ats-ws/atsSzr/v4_2
      
 Ve WSDL souborech jsou vždy uvedeny URL endpointu pro produkční prostředí CAAIS. Pokud je potřeba použít jiné prostředí, je nutné ručně URL upravit.

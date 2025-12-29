@@ -27,15 +27,15 @@ JIP/KAAS legacy API využívá SOAP protokol verze 1.1. CAAIS k udržení maxi
 
    * - Veze
      - WSDL
-     - XML jmenný prostor
+     - XMLNS
    * - 3.4
-     - `DirectAuth_v3_4 <wsdl/DirectAuth_v3_4.wsdl>`_
+     - :download:`DirectAuth_v3_4 <_static/wsdl/DirectAuth_v3_4.wsdl>`
      - http\://agw-as.cz/ats-ws/atsUser/atsSzr/v3_4
    * - 4.1
-     - `DirectAuth_v4_1 <wsdl/DirectAuth_v4_1.wsdl>`_
+     - :download:`DirectAuth_v4_1 <_static/wsdl/DirectAuth_v4_1.wsdl>`
      - http\://agw-as.cz/ats-ws/atsUser/atsSzr/v4_1
    * - 4.2
-     - `DirectAuth_v4_2 <wsdl/DirectAuth_v4_2.wsdl>`_
+     - :download:`DirectAuth_v4_2 <_static/wsdl/DirectAuth_v4_2.wsdl>`
      - http\://agw-as.cz/ats-ws/atsUser/atsSzr/v4_2
      
 Ve WSDL souborech jsou vždy uvedeny URL endpointu pro produkční prostředí CAAIS. Pokud je potřeba použít jiné prostředí, je nutné ručně URL upravit.
