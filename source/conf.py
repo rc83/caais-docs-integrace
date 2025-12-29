@@ -25,6 +25,12 @@ language = 'cs'
 
 autosectionlabel_prefix_document = True
 smartquotes = False
+numfig = True
+
+numfig_format = {
+    'table': 'Tabulka %s: ',
+    'figure': 'Obrázek %s: ',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

@@ -47,3 +47,13 @@ div.rst-content > div.document section > div.admonition {
 div.rst-content > div.document section > h1+div.admonition {
     margin: 0 0 1.5em;
 }
+
+div.rst-content table.docutils {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+div.rst-content table.docutils caption {
+    text-align: left;
+}
