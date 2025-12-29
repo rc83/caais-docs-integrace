@@ -1,10 +1,11 @@
 Číselníky
 =========
 
-Číselník typu instituce
------------------------
 
 .. _api_jip:ciselnik:instituce:
+
+Číselník typu instituce
+-----------------------
 
 .. list-table:: Ćíselník typu instituce
    :header-rows: 1
@@ -61,10 +62,10 @@
      - Insolvenční správci
 
 
+.. _api_jip:ciselnik:prihlaseni:
+
 Číselník typu přihlášení
 ------------------------
-     
-.. _api_jip:ciselnik:prihlaseni:
 
 .. list-table:: Ćíselník typu přihlášení
    :header-rows: 1
