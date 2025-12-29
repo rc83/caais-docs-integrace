@@ -1,5 +1,6 @@
-CAAIS API
-=========
+================
+API přihlašování
+================
 
 CAAIS poskytuje tři protokoly pro autentizaci uživatele. Pokud nemáte důvod zvolit jiný protokol, doporučujeme integraci protokolem OIDC.
 
@@ -15,12 +16,12 @@ CAAIS poskytuje tři protokoly pro autentizaci uživatele. Pokud nemáte důvod 
 
 
 Hlavní odlišnosti protokolů
----------------------------
+===========================
 
 Níže shrnujeme hlavní výhody a nevýhody jednotlivých protokolů.
 
 OIDC
-~~~~
+----
 
 Výhody
 ......
@@ -39,7 +40,7 @@ Nevýhody
 
 
 SAML 2.0
-~~~~~~~~
+--------
 
 Výhody
 ......
@@ -57,7 +58,7 @@ Nevýhody
 
 
 JIP/KAAS legacy
-~~~~~~~~~~~~~~~
+---------------
 
 Výhody
 ......
