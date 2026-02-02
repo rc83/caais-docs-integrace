@@ -20,6 +20,10 @@ div.rst-content > div.document table.docutils td li {
 }
 
 
+div.rst-content > div.document table.docutils div.line-block {
+    margin-bottom: .5ex;
+}
+
 div.rst-content > div.document section > p {
     margin: 1.5ex 0;  
 }

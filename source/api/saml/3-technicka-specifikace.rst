@@ -4,6 +4,8 @@ Technická specifikace SAML 2.0
 
 *Tato kapitola obsahuje podrobnou technickou specifikaci pro komunikaci systémů AIS se systémem CAAIS pomocí protokolu SAML 2.0.*
 
+.. _api_saml:autokonfigurace:
+
 SAML 2.0 autokonfigurace
 ========================
 
