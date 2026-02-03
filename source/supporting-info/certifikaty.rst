@@ -140,15 +140,13 @@ Podrobnosti v tabulce níže.
      - DigiCert Inc.
      - `GeoTrust EV RSA CA G2 <https://knowledge.digicert.com/general-information/digicert-trusted-root-authority-certificates>`_
    * - gov.cz
-     - | podpis
-       | dešifrování
+     - podpis
      -
      - I. CA
      - `I.CA TLS DV/OV CA/RSA 06/2022 <https://www.ica.cz/korenove-certifikaty>`_
    * - cms2.cz
      - | autentizace
        | podpis
-       | dešifrování
      -
      - I. CA
      - `I.CA TLS DV/OV CA/RSA 06/2022 <https://www.ica.cz/korenove-certifikaty>`_
@@ -156,19 +154,25 @@ Podrobnosti v tabulce níže.
 
 .. _si:certs:faq:
 
-Často kladené otázky
-====================
+Často řešené potíže
+===================
 
 .. _si:certs:faq-1:
 
-**Otázka 1: Při přístupu k CAAIS v síti CMS** (https://caais.cms2.cz či https://caais-edu.cms2.cz) **dostávám chybu nezabezpečeného spojení – neznámé certifikační autority. Kde je problém a jak ho vyřeším?**
+1. Chyba nezabezpečeného spojení v CMS
+--------------------------------------
+
+**Při přístupu k CAAIS v síti CMS** (https://caais.cms2.cz či https://caais-edu.cms2.cz) **dostávám chybu nezabezpečeného spojení – neznámé certifikační autority.**
 
 Na rozhraní do sítě CMS využívá CAAIS TLS certifikáty od I.CA, která bohužel není obsažena ve výchozím trust store webových prohlížečů. Výjimkou je prohlížeč Microsoft Edge, který využívá certifikáty Microsoft Trusted Root Certificate Program, kde I.CA zařazena je. Je tedy nutné použít webový prohlížeč Microsoft Edge, anebo do trust store prohlížeče přidat `příslušný kořenový certifikát I.CA <https://www.ica.cz/sites/default/files/download/2025/rcatls22_rsa.pem>`_ (údaje platné k 2026/02).
 
 .. _si:certs:faq-2:
 
-**Otázka 2: Zkoušel jsem přidat certifikát QCA k uživateli a při tom jsem zjistil, že váš seznam autorit vydávající certifikáty máte neúplný. Chybí v něm certifikační autorita pro QCA certifikáty PostSignum – CN=PostSignum QCA 4. Proč tato certifikační autorita v CAAIS chybí?**
+2. Autentizace kvalifikovaným certifikátem
+------------------------------------------
 
-Kvalifikované certifikáty *nelze* pro autentizaci uživatelů použít, jsou určeny výhradně pro kvalifikovaný podpis dle eIDAS. Kvalifikované certifikáty neobsahují hodnotu Client Authentication (OID 1.3.6.1.5.5.7.3.2) v atributu Extended Key Usage (EKU). Toto omezení dané certifikační politikou brání zneužití kvalifikovaného podpisu. Je nutné použít certifikáty vydané jako komerční; v případě Postsignum se jedná o certifikáty podepsané `mezilehlým certifikátem`_ CN=PostSignum Public CA 4 či CN=PostSignum Public CA 5 (údaj pro rok 2025). Tyto mezilehlé certifikáty CAAIS rozpoznává.
+**Zkoušel jsem přidat certifikát QCA k uživateli a při tom jsem zjistil, že seznam certifikačních autorit v CAAIS je neúplný. Chybí v něm certifikační autorita pro QCA certifikáty PostSignum – CN=PostSignum QCA 4. Proč tato certifikační autorita v CAAIS chybí?**
+
+Kvalifikované certifikáty *nelze* pro autentizaci uživatelů použít, jsou určeny výhradně pro kvalifikovaný podpis dle eIDAS. Kvalifikované certifikáty neobsahují hodnotu Client Authentication (OID 1.3.6.1.5.5.7.3.2) v atributu Extended Key Usage (EKU). Toto omezení dané certifikační politikou brání zneužití kvalifikovaného podpisu. Je nutné použít certifikáty vydané jako komerční; v případě Postsignum se jedná o certifikáty podepsané `mezilehlým certifikátem`_ CN=PostSignum Public CA 4 či CN=PostSignum Public CA 5 (údaj platný k 2025/12). Tyto mezilehlé certifikáty CAAIS rozpoznává.
 
 .. _mezilehlým certifikátem: https://www.postsignum.cz/certifikaty_autorit.html
