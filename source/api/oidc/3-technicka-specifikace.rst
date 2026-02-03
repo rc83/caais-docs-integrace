@@ -355,6 +355,10 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
        | \_data\_user\_identifier
      - subject
      - "Subjekt"."kód spuú" (Subject.spuuCode)
+   * - UUID
+     - legal_entity_unique_identifier
+     - subject
+     - "Subjekt"."unikátní identifikátor" (Subject.uniqueIdentifier)
    * - Autorizační token
      - time_limited_id
      - role

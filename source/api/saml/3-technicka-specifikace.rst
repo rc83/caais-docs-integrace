@@ -223,6 +223,9 @@ CAAIS může vracet v SAML response následující údaje o autentizovaném u�
    * - Identifikátor SPUÚ
      - AuthorizedPrivateEntityPersonalDataUserIdentifier
      - "Subjekt"."kód spuú" (Subject.spuuCode)
+   * - UUID
+     - LegalEntityUniqueIdentifier
+     - "Subjekt"."unikátní identifikátor" (Subject.uniqueIdentifier)
    * - Autorizační token
      - TimeLimitedId
      - Technický atribut pro ukládání tokenů (neuveden v DM)
