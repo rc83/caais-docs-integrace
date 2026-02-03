@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CAAIS'
-copyright = '2025 Digitální a informační agentura'
-author = 'Milan Babic (NAKIT); Richard Chudoba (DIA)'
-release = '2.16'
+copyright = '2026 Digitální a informační agentura'
+author = 'Richard Chudoba (DIA); Milan Babic (NAKIT)'
+release = '2.18'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

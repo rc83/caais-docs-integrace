@@ -16,3 +16,4 @@ Dokumentace CAAIS
    api/index
    api-idm/index
    supporting-info/index
+   changelog
