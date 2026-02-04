@@ -8,7 +8,7 @@ Verze a změny
 
 *Stručně popsané syntaktické či sémantické změny a opravy API od počátku roku 2026 – verze 2.17.*
 
-verze 2.18 (2026-02-03)
+verze 2.18 (2026-02-04)
 -----------------------
 
 - Přidej persistentní atribut UUID pro subjekt. Předávej jej protokoly OIDC a SAML 2.0. :ticket:`closes #198`
