@@ -49,6 +49,8 @@ Pro praktické potřeby je jednoznačným identifikátorem instituce *coalesce(O
 - Většina orgánů veřejné moci má shodné OVMID a IČO.
 - Některé orgány veřejné moci mají pouze OVMID.
 
+Od verze 2.18 poskytuje CAAIS persistentní UUID subjektu, u nějž – na rozdíl od zkratky subjektu – zaručujeme jeho neměnnost.
+
 
 Návrh architektury
 ==================
