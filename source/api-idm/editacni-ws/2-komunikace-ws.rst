@@ -30,7 +30,7 @@ Endpointy pro přístup k WS 1.0
      
 Pokud jste připojeni do :abbr:`CMS (Centrální místo služeb)`, použijete místo domény **gov.cz** doménu **cms2.cz**.
 
-Hodnota parametru ``exampleId`` obsahuje zkratku subjektu z CAAIS.
+Na konci cesty v URL přijde místo ``exampleId`` uvést zkratku subjektu z CAAIS.
 
 .. admonition:: Formát URL
    :class: warning
@@ -114,7 +114,7 @@ Každou metodu editační služby je nutné volat na správném endpointu podle 
      
 Pokud jste připojeni do :abbr:`CMS (Centrální místo služeb)`, použijete místo domény **gov.cz** doménu **cms2.cz**.
 
-Hodnota parametru ``exampleId`` obsahuje zkratku subjektu z CAAIS.
+Na konci cesty v URL přijde místo ``exampleId`` uvést zkratku subjektu z CAAIS.
 
 .. admonition:: Formát URL
    :class: warning
