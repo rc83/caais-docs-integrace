@@ -122,6 +122,12 @@ Základní struktura URL, na kterou CAAIS přesměruje uživatele po přihláše
       https://example.org/login?code=hodnota&state=my_state
 
 
+.. admonition:: HTTP 400 Bad Request
+   :class: warning
+   
+   Pokud pokus o přihlášení místo přesměrování končí chybou HTTP 400 Bad Request, je nejčastější příčina v parametrech poskytnutých v iniciální URL pro přihlášení. Může se jednat o chybějící povinné parametry, neplatné či neznámé hodnoty parametrů či nesoulad hodnot parametrů s konfigurací AIS v CAAIS – například použitá ``redirect_uri`` není v konfiguraci AIS v CAAIS uvedená mezi povolenými adresami pro přesměrování.
+
+
 .. _oidc:atributy:
 
 Seznam atributů uživatele (profilu) v identity tokenu
@@ -378,6 +384,7 @@ AIS definuje při žádosti o přihlášení parametr ``scope``, skrze který 
      &code_challenge=0Aw3qcaENBz7RM378ZdZZ0UXRvcqpGJSz6JnymyBeVI
      &nonce=my_nonce
      &state=my_state
+
 
 Získání tokenů
 ==============
