@@ -114,9 +114,9 @@ Pro *integrační testování* :ref:`v prostředí test-ext <si:env:int>` lze n
 Certifikáty na straně CAAIS
 ===========================
 
-Při navázání TLS spojení k CAAIS vyžadujeme, aby AIS ověřoval platnost certifikátu CAAIS včetně certifikační autority. Certifikační autorita se liší podle rozhraní, ke kterému se připojujete. Na Internetovém rozhraní gov.cz jsou využívány certifikáty vydané DigiCert Inc., respektive Let's Encrypt, na rozhraní CMS cms2.cz certifikáty I. CA.
+Při navázání TLS spojení k CAAIS vyžadujeme, aby AIS ověřoval platnost certifikátu CAAIS včetně ověření důvěryhodnosti certifikační autority proti uložišti důvěryhodných certifikátů (trust store). Certifikační autorita se liší podle rozhraní, ke kterému se připojujete. Na Internetovém rozhraní gov.cz jsou využívány certifikáty vydané DigiCert Inc., respektive Let's Encrypt, na rozhraní CMS cms2.cz certifikáty I. CA.
 
-U protokolu SAML 2.0 vyžadujeme, aby AIS ověřoval platnost certifikátu v podpisu *response* včetně certifikační autority. CAAIS inzeruje používaný certifikát v :ref:`autokonfiguraci <api_saml:autokonfigurace>`.
+U protokolu SAML 2.0 vyžadujeme, aby AIS ověřoval platnost certifikátu v podpisu *response* včetně ověření důvěryhodnosti certifikační autority proti uložišti důvěryhodných certifikátů (trust store). CAAIS inzeruje používaný certifikát v :ref:`autokonfiguraci <api_saml:autokonfigurace>`.
 
 Podrobnosti v tabulce níže.
 
