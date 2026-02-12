@@ -8,6 +8,13 @@ Verze a změny
 
 *Stručně popsané syntaktické či sémantické změny a opravy API od počátku roku 2026 – verze 2.17.*
 
+verze 2.19 (2026-02-17)
+-----------------------
+
+- Oprav API JIP/KAAS editačních webových služeb:
+
+  - Vracej správné časové řezy v ``HistoryDataResponse``. :ticket:`closes #324`
+
 verze 2.18 (2026-02-04)
 -----------------------
 
@@ -22,7 +29,7 @@ verze 2.18 (2026-02-04)
   - Oprav zpracování explicitních namespace. :ticket:`fixes #319`
   - Změn výchozí typ certifikátů v CAAIS IdP na komerční (původně kvalifikovaný). :ticket:`fixes #329`
 
-verze 2.17 (2026-01-21)
+verze 2.17 (2026-01-20)
 -----------------------
 
 - Aktualizuj API JIP/KAAS editačních webových služeb:
